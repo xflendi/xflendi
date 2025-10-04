@@ -5,16 +5,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f5f5f5;
-}
+    background-color: #FFFFFF;
+    
 
-.container {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 320px;
-    text-align: center;
 }
 
 .input-code {
@@ -23,49 +16,70 @@ body {
 }
 
 .code-input {
-    width: 40px;
-    height: 40px;
+    width: 52px;
+    height: 64px;
     text-align: center;
     font-size: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius:6px;
+    margin-right: 4px;
 }
+
 
 .scan-text {
-    margin-top: 10px;
-    font-size: 16px;
+    margin-top: 67px;
+    font-size: 23px;
     color: #333;
+    text-align: center;
+    font-weight: 800;
+    align-items: center;
 }
 
+/* Контейнер для кнопок с рамкой */
 .keyboard {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки для кнопок */
     grid-template-rows: repeat(4, 1fr); /* 4 ряда для кнопок */
-    gap: 10px;
-    margin-top: 20px;
+    gap: 5px; /* Отступы между кнопками */
+    margin-top: 63px; /* Отступ сверху */
+    max-width: 370px; /* Максимальная ширина контейнера */
+    width: 100%; /* Занимает всю доступную ширину */
+    border: 0.5px solid #FFFFFF;
+    box-shadow: 0 0 0 1px #FFFFFF;
+    border-radius: 8px; /* Скругленные углы рамки */
+    padding: 5px; /* Отступ внутри рамки */
+    background-color: #bfc5ce;
+    
 }
 
+/* Стиль для кнопок */
 .key {
-    padding: 10px;
-    font-size: 18px;
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 3px; /* Отступы внутри кнопки */
+    font-size: 22px; /* Размер шрифта */
+    width: 120px;
+    background-color: #FFFFFF; /* Цвет фона кнопки */
+    border: 1px solid #ddd; /* Граница кнопки */
+    border-radius: 5px; /* Скругление углов кнопки */
+    cursor: pointer; /* Курсор при наведении */
+    font-weight: 21; /* Жирный шрифт */
+    transition: background-color 0.3s ease; /* Плавное изменение фона при наведении */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .key:hover {
-    background-color: #e0e0e0;
+    background-color: #FFFFFF;
 }
 
 #scan, #send {
     grid-column: span 3;
-    background-color: #007bff;
+    background-color: #f0f0f0;
     color: white;
 }
 
 #scan:hover, #send:hover {
-    background-color: #0056b3;
+    background-color: #FFFFFF;
+
+
 }
 
 #clear, #scan {
@@ -77,24 +91,35 @@ body {
 
 #clear i, #scan i {
     font-size: 24px;
+    font-weight: Bold;
 }
 
 #clear {
-    background-color: #f44336;
-    color: white;
+    background-color: #FFFFFF;
+    color: black;
+    font-weight: Bold;
+    font-size: 25px;
 }
 
 #clear:hover {
-    background-color: #d32f2f;
+    background-color: #FFFFFF;
 }
 
 #scan {
-    background-color: #007bff;
-    color: white;
+    background-color: #FFFFFF;
+    font-size: 17px;
+    color: black;
+    font-weight: 2;
+    flex-direction: column;
 }
 
+#scan svg {
+    margin-top: 5px; /* Добавляем небольшой отступ между текстом и иконкой */
+    width: 20px; /* Размер иконки */
+    height: 20px; /* Высота иконки */
+
 #scan:hover {
-    background-color: #0056b3;
+    background-color: #FFFFFF;
 }
 
 #zero {
@@ -102,3 +127,4 @@ body {
     grid-row: 4; /* Находится в 4 ряду, под "8" */
     text-align: center;
 }
+

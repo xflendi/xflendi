@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Телеграм Бот WebApp</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://www.flaticon.com/ru/free-icon-font/qrcode_8770923?term=qr+%D0%BA%D0%BE%D0%B4&related_id=8770923"></script>
 </head>
 <body>
     <div class="container">
@@ -16,7 +17,9 @@
             <input type="text" maxlength="1" class="code-input" id="input5">
             <input type="text" maxlength="1" class="code-input" id="input6">
         </div>
-        <p class="scan-text">Введите код с наклейки</p>
+    <p class="scan-text"><i class="<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="23" height="23"><path d="M0,11H11V0H0V11ZM2,2h7v7H2V2Zm2,2h3v3H4V4ZM24,0H13V11h11V0Zm-2,9h-7V2h7v7Zm-2-2h-3V4h3v3ZM0,24H11V13H0v11ZM2,15h7v7H2v-7Zm2,2h3v3H4v-3Zm13-4v4h-4v-4h4Zm0,4h3v3h-3v-3Zm-4,3h4v4h-4v-4Zm11-7v4h-4v-4h4Z"/></svg>
+</i> Введите код с наклейки</p>
         <div class="keyboard">
             <button class="key">1</button>
             <button class="key">2</button>
@@ -27,14 +30,16 @@
             <button class="key">7</button>
             <button class="key">8</button>
             <button class="key">9</button>
-            <button class="key" id="clear"><i class="fas fa-backspace"></i></button> 
+            <button class="key" id="scan">Сканировать<i class="<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="20" height="20"><path d="M0,11H11V0H0V11ZM2,2h7v7H2V2Zm2,2h3v3H4V4ZM24,0H13V11h11V0Zm-2,9h-7V2h7v7Zm-2-2h-3V4h3v3ZM0,24H11V13H0v11ZM2,15h7v7H2v-7Zm2,2h3v3H4v-3Zm13-4v4h-4v-4h4Zm0,4h3v3h-3v-3Zm-4,3h4v4h-4v-4Zm11-7v4h-4v-4h4Z"/></svg>
+	</i>
             <button class="key" >0</button>
-            <button class="key" id="scan"><i class="fas fa-qrcode"></i></button> 
-            <button class="key" id="send">Отправить</button>
+            <button class="key" id="clear">⌫</button>
         </div>
     </div>
 
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Подключение FontAwesome для значков -->
+    <script src="https://fontawesome.com/icons/qrcode?f=classic&s=solid"></script> <!-- Подключение FontAwesome для значков -->
 </body>
 </html>
+
