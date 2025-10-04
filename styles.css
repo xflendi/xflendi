@@ -64,8 +64,6 @@ body {
     font-weight: 21; /* Жирный шрифт */
     transition: background-color 0.3s ease; /* Плавное изменение фона при наведении */
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-    color: #000; 
-
 }
 
 .key:hover {
@@ -129,68 +127,9 @@ body {
     grid-row: 4; /* Находится в 4 ряду, под "8" */
     text-align: center;
 
-* {
-    box-sizing: border-box; /* Учитываем padding и border при расчете ширины */
-    margin: 0;
-    padding: 0;
-}
 
-html, body {
-    width: 100%; /* Убедитесь, что ширина всей страницы на 100% */
-    height: 100%;
-    overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
-}
-
-.keyboard {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
-    grid-template-rows: repeat(4, 1fr);    /* 4 ряда */
-    gap: 5px;  /* Промежутки между кнопками */
-    width: 100%;  /* Обеспечивает правильное расположение по ширине */
-    max-width: 100%;  /* Максимальная ширина 100% */
-    padding: 10px; /* Отступы для предотвращения наложения */
-    margin: 0 auto;  /* Центрирование по горизонтали */
-}
-
-.key {
-    padding: 15px;
-    font-size: 22px;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    text-align: center;
-    width: 100%;  /* Устанавливаем ширину кнопок по размеру контейнера */
-}
-
-.key:hover {
-    background-color: #e0e0e0;
-}
-
-    .key {
-        padding: 12px; /* Уменьшаем отступы кнопок */
-        font-size: 18px; /* Уменьшаем размер шрифта на мобильных */
-    }
-
-    /* Стили для других элементов */
-    #scan {
-        font-size: 16px; /* Меньше шрифт для кнопки "Сканировать" */
-    }
-    html, body {
-    overflow: hidden; /* Отключает всю прокрутку */
-    height: 100%;     /* Устанавливает высоту страницы в 100% */
-    margin: 0;        /* Убирает отступы */
-
-* {
-    overflow: hidden; /* Отключает переполнение для всех элементов */
-    word-wrap: break-word; /* Разбиение слов для предотвращения выхода текста за пределы */
-}
-
-@media (max-width: 768px) {}
-
-}
-
+width: 50%;
+min-width: 200px;
+max-width: 500px;
 
 
