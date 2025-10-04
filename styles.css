@@ -188,6 +188,9 @@ html, body {
     word-wrap: break-word; /* Разбиение слов для предотвращения выхода текста за пределы */
 }
 
+@media (max-width: 768px) {}
+
+}
 
 
 
