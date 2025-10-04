@@ -64,6 +64,8 @@ body {
     font-weight: 21; /* Жирный шрифт */
     transition: background-color 0.3s ease; /* Плавное изменение фона при наведении */
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    color: #000; 
+
 }
 
 .key:hover {
@@ -126,5 +128,25 @@ body {
     grid-column: span 1; /* Занимает 1 колонку */
     grid-row: 4; /* Находится в 4 ряду, под "8" */
     text-align: center;
+
+@media (max-width: 768px) {
+    .keyboard {
+        grid-template-columns: repeat(3, 1fr); /* Колонки для мобильных */
+        gap: 5px; /* Меньше промежутков между кнопками */
+    }
+
+    .key {
+        padding: 12px; /* Уменьшаем отступы кнопок */
+        font-size: 18px; /* Уменьшаем размер шрифта на мобильных */
+    }
+
+    /* Стили для других элементов */
+    #scan {
+        font-size: 16px; /* Меньше шрифт для кнопки "Сканировать" */
+    }
 }
+
+
+}
+
 
